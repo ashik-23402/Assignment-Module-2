@@ -56,6 +56,23 @@ This merges the `feature-branch` into the `main` branch, creating a new merge co
 - **Rebase**: Use when you want a clean, linear history and are working on a private branch.
 - **Merge**: Use when you want to preserve the complete history and are working on a shared branch.
 
+  
+### All command used:
+```bash
+git checkout main
+git pull origin develop
+git branch feature/add-to-cart
+git rebase develop
+git add .
+git commit -m"<commit-message>"
+git rebase -i <commit-hash>
+git rebase --edit-todo
+git rebase --continue
+git merge feature/add-to-cart
+git push origin feature/add-to-cart
+
+```
+
   ## Practice screenshot <img width="1280" height="1024" alt="git1" src="https://github.com/user-attachments/assets/ffd49f17-62a9-4ba4-8498-d77fb749868c" />
   <img width="1280" height="1024" alt="git2" src="https://github.com/user-attachments/assets/8378641e-44ba-466b-8e63-7198d3bc0304" />
   <img width="1280" height="1024" alt="reword" src="https://github.com/user-attachments/assets/f47f6cd5-d716-45c7-9037-5aaec449996f" />
